@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Secular+One&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.body {
+    font-family: "Nimbus Sans";
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* -------- spaces ------- */
+.space {
+    height: 1.5vw;
+}
+
+
+.space1 {
+    height: 5vw;
+}
+
+.space2 {
+    height: 7.5vw;
+}
+
+.space3 {
+    height: 0.5vw;
+}
+
+.space4 {
+    height: 10vw;
+}
+
+/* --------------------------------- */
+
+.left, .right {
+    clear: both;
+}
+
+.left {
+    float: left;
+    font-size: 15px;
+    width: 15%;
+    height: auto;
+    color: rgb(77, 77, 77);
+    margin-top: 20vw;
+    position: fixed;
+    margin-left: 1.5%;
+    font-weight: lighter;
+    line-height: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 연한글씨 */
+h1 {
+    font-size: 15px;
+    color: rgb(148, 148, 148);
+    font-weight: lighter;
+}
+
+
+/* 진한글씨 */
+h2 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+.right {
+    float: right;
+    width: 80%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+/* intro */
+.intro-wrap {
+    width: 88%;
+    height: auto;
+    margin: auto;
+    margin-top: 10vw;
+}
+
+
+.intro-text-wrap {
+    display: flex;
+    justify-content: first baseline;
+    color: black;
+    margin: auto;
+}
+
+intro-h {
+    font-size: 4vw;
+    font-weight: bold;
+    max-width: 48.6vw;
+}
+
+intro-b {
+    width: 35vw;
+    font-size: 1vw;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+h1 {
+    max-width: 800px;
+    font-size: 1.2vw;
+    font-weight: 700;
+    font-family: 'Gaegu', cursive;
+    font-weight: 700;
+    color: rgb(248, 53, 102);
+}
+
+.intro-img {
+    margin: auto;
+    text-align: center;
+    padding-top: 4vw;
+}
+
+/* summary */
+.summary-wrap {
+    width: 88%;
+    margin: auto;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-h, .summary-b {
+    width: 88%;
+    margin: auto;
+    text-align: center;
+}
+
+.summary-h {
+    font-size: 0.9vw;
+    font-weight: bold;
+    color: rgb(175, 175, 175);
+    padding-left: -5vw;
+}
+
+.summary-b {
+    font-size: 0.9vw;
+    font-weight: medium;
+    color: rgb(0, 0, 0);
+}
+
+.size {
+    align-items: center;
+}
+
+/* concept */
+.concept-wrap {
+    width: 88%;
+    margin: auto;
+    margin-top: 15vw;
+}
+
+.research {
+    margin-left: 5vw;
+    position: absolute;
+}
+
+
+.target-h, .target-b, .concept-h, .concept-b {
+    width: 400px;
+    position: relative;
+}
+
+.target-h, .concept-h {
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding-top: 12vw;
+}
+
+.target-b, .concept-b {
+    font-size: 0.9vw;
+    font-weight: medium;
+    margin-top: 1vw;
+}
+
+/* Design */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-top: 30vw;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns = 반응형 */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other = 반응형*/
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* .artwork-h {
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding-top: 12vw;
+    color: black;
+}
+
+.artwork-b {
+    font-size: 0.9vw;
+    font-weight: bold;
+    color: rgb(175, 175, 175);
+} */
