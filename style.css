@@ -1,10 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu:wght@400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Secular+One&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+    /* ----------------------Mobile 미디어쿼리------------------------------ */
+    @media only screen and (max-width: 480px) {
+    }
+
+
+    
+    
+    /* ----------------------Desktop 미디어쿼리------------------------------ */
+        @media only screen and (min-width: 2000px) { 
+    }
+    
+
+/* ------------------------ */
+.header {
+    width: 100%;
+    height: 1vw;
+    top: 0;
+    left: 0;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.678);
+    position: fixed;
+    z-index: 10;
+}
+
+.header > a {
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 1vw;
+    right: 1.7vw;
+    z-index: 20;
+}
 
 .body {
     font-family: "Nimbus Sans", "pretendard";
     background-color: #ffffff;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* -------- spaces ------- */
@@ -30,6 +69,8 @@
 }
 
 /* --------------------------------- */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 
 .left, .right {
     clear: both;
@@ -91,7 +132,35 @@ intro-h {
     font-size: 4vw;
     font-weight: bold;
     max-width: 48.6vw;
+    -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 intro-b {
     width: 35vw;
@@ -102,9 +171,8 @@ intro-b {
 
 h1 {
     max-width: 800px;
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: 700;
-    font-family: 'Gaegu', cursive;
     font-weight: 700;
     color: rgb(248, 53, 102);
 }
@@ -117,15 +185,13 @@ h1 {
 
 /* summary */
 .summary-wrap {
-    width: 88%;
-    margin: auto;
-    margin-top: 3vw;
+    width: 80%;
+    margin-top: 5vw;
     display: flex;
     justify-content: space-between;
 }
 
 .summary-h, .summary-b {
-    width: 88%;
     margin: auto;
     text-align: center;
 }
@@ -134,7 +200,7 @@ h1 {
     font-size: 0.9vw;
     font-weight: bold;
     color: rgb(175, 175, 175);
-    padding-left: -5vw;
+    margin-top: 2vw;
 }
 
 .summary-b {
@@ -144,7 +210,7 @@ h1 {
 }
 
 .size {
-    align-items: center;
+    margin-top: 1.5vw;
 }
 
 /* concept */
@@ -289,7 +355,7 @@ img {
     background-color: black;
     border-radius: 18vw;
     text-align: center;
-    padding-top: 0.7vw;
+    padding-top: 1.5vw;
     margin-top: 2vw;
 }
 
@@ -305,14 +371,13 @@ img {
 
 .ig {
     width: 100%;
-    height: 65vw;
-    margin-top: 15vw;
+    height: 60vw;
     margin-left: 5vw;
-    margin-bottom: 15vw;
     background-image: url('https://ifh.cc/g/MYfyW3.png');
     background-size: 40vw;
     background-repeat: no-repeat;
     background-position: top right;
+    margin-top: -10vw;
 }
 
 .ig-h-2 {
@@ -329,13 +394,13 @@ img {
 }
 
 .ig-b {
-    width: 35vw;
+    width: 33vw;
     font-size: 1vw;
-    margin-top: 2vw;
+    margin-top: 5vw;
 }
 
 .ig-b-ig {
-    margin-top: 2vw;
+    margin-top: 5vw;
     width: 13vw;
     height: 2.5vw;
     border-radius: 50px;
